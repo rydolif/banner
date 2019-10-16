@@ -1,0 +1,128 @@
+@import "libs"
+@import "base"
+
+.container
+	max-width: 2000px
+	margin: 0 auto
+	padding: 0 15px
+	width: 100%
+
+.header
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	padding:
+		top: 50px
+		bottom: 50px
+	transition: all .6s
+	z-index: 1001
+	display: flex
+	justify-content: space-between
+	padding: 15px 0
+
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&__logo
+		text-transform: uppercase
+		color: #fff
+		font-size: 36px
+
+	&--active,
+	&--menu
+		background-color: rgba(#0f054c, .95)
+
+
+
+.nav
+	ul
+		display: flex
+		justify-content: space-between
+
+	li
+		margin-right: 55px
+		&:last-child
+			margin-right: 0
+
+	a
+		position: relative
+		z-index: 1
+		font-size: 24px
+		display: inline-block
+		height: 70px
+		border: 2px solid transparent
+		outline: none
+		padding: 0 40px
+		border-radius: 40px
+		background: transparent
+		text-align: center
+		color: #fff
+		line-height: 64px
+		letter-spacing: .2px
+		transition: all .6s
+		opacity: .6
+
+		&:hover,
+		&:focus
+			border: 2px solid #fff
+			outline: none
+			text-decoration: none
+			cursor: pointer
+			box-shadow: 0 5px 10px rgba(#fff, .5)
+			color: #fff
+			opacity: 1
+
+
+h1
+	font-size: 64px
+	text-transform: uppercase
+	margin-bottom: 1em
+
+p
+	font-size: 24px
+	opacity: .6
+	font-weight: 300
+	margin-bottom: 2em
+
+.main
+	position: relative
+	min-height: 100vh
+	display: flex
+	background-image: url(../img/bg.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	color: #fff
+	padding: 120px 0 80px
+	z-index: 1
+
+
+	&__decor
+		position: absolute
+		right: 0
+		bottom: 0
+		height: 90%
+		z-index: -1
+
+	&__btn
+		font-size: 30px
+
+	&__money
+		width: 50%
+
+	&__section
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+
+
+
+
+
+
+@import "page"
+@import "media" // Always at the end

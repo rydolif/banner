@@ -1,0 +1,119 @@
+
+@media only screen and (max-width : 2000px)
+
+	.container
+		max-width: 1400px
+
+@media only screen and (max-width : 1400px)
+	.container
+		max-width: 1200px
+
+@media only screen and (max-width : 1200px)
+	.container
+		max-width: 992px
+
+	h1
+		font-size: 48px
+
+	p
+		font-size: 20px
+
+@media only screen and (max-width : 992px)
+	.container
+		max-width: 767px
+
+	.nav
+
+		li
+			margin-right: 20px
+
+		a
+			font-size: 20px
+			line-height: 45px
+			height: 50px
+			padding: 0 30px
+
+	.btn
+		height: 60px
+		line-height: 60px
+		font-size: 24px
+
+	h1
+		font-size: 40px
+
+	p
+		font-size: 18px
+
+@media only screen and (max-width : 767px)
+	.container
+		max-width: 576px
+
+	.nav
+		position: fixed
+		display: block
+		width: 100%
+		height: 100%
+		flex-direction: column
+		right: -100%
+		top: 80px
+		z-index: -1
+		background-color: rgba(#0f054c, .95)
+		transition: all .3s
+
+		ul
+			display: flex
+			flex-direction: column
+			justify-content: center
+			text-align: center
+			margin: 40px
+
+		li
+			margin: 0
+			margin-bottom: 10px
+
+		a
+			opacity: 1
+		
+		&--active
+			right: 0
+
+	.hamburger
+		display: block
+
+	.main
+		&__money
+			display: none
+
+		br
+			display: none
+
+
+@media only screen and (max-width : 576px)
+
+	h1
+		font-size: 32px
+
+	p
+		font-size: 16px
+
+	.btn
+		height: 50px
+		line-height: 50px
+		font-size: 18px
+
+
+@media only screen and (max-width : 480px)
+
+	h1
+		font-size: 26px
+
+	p
+		font-size: 14px
+
+
+
+
+
+
+
+
